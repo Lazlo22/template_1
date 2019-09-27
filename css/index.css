@@ -35,6 +35,7 @@ header img {
     color: #1d1d1d;
     text-transform: uppercase;
     padding: 0px 15px;
+    font-size: 0.95em;
     transition: color 1s;
 }
 
@@ -51,6 +52,75 @@ header img {
 }
 
 .menu ul {
-    margin: 36px 0px 36px 0px;
+    margin: 36px 50px 36px 0px;
     display: flex;
+}
+
+#home {
+    width: 100vw;
+    height: 600px;
+    background-color: #e9e9e9;
+    display: grid;
+    grid-template-columns: 55% 40% 5%;
+    grid-template-rows: 25% 42% 32%;
+}
+
+.bg-home {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.bg-home h1 {
+    font-size: 2.5em;
+    margin-bottom: 0px;
+}
+
+.bg-home p {
+    color: var(--text);
+}
+
+.bg-home a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.bg-home button {
+    margin-top: 15px;
+    box-shadow: #10c9c3;
+    padding: 15px 30px;
+    background-color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+
+#about {
+    width: 100vw;
+    height: 420px;
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.bg-about h2 {
+    font-size: 2.2em;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.text {
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    margin: 0px;
+    color: var(--text);
+}
+
+.text p {
+    margin-bottom: 0;
+}
+
+.bg-about img {
+    padding: 0;
+    margin: 0px 30%;
 }
