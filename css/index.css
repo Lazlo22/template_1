@@ -93,7 +93,7 @@ header img {
     border-color: var(--blue-color);
 }
 
-#about {
+.bg-about {
     width: 100vw;
     height: 420px;
     background-color: #ffffff;
@@ -122,5 +122,44 @@ header img {
 
 .bg-about img {
     padding: 0;
-    margin: 0px 30%;
+    margin: 30px 30% 0px 30%;
 }
+
+.about-skills {
+    width: 100vw;
+    height: 570px;
+    background-color: #f8f9f9;
+    display: grid;
+    grid-template-columns: 5% 40% 5% 50%;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.about-skills img {
+    grid-area: 1 / 4 / 3 / 5;
+    height: 570px;
+    width: 100%;
+}
+
+.skills {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.skills h3 {
+    font-size: 2.2em;
+}
+
+.skills > p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+}
+
+.skills > progress {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 490px;
+    height: 5px;
+    border-radius: 3px;
+}
+
+progress::-webkit-progress-value {background-color: var(--blue-color) !important;}
+progress::-moz-progress-bar {background-color: var(--blue-color) !important;}
