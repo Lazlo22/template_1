@@ -148,12 +148,12 @@ header img {
     font-size: 2.2em;
 }
 
-.skills > p {
+.skills>p {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
 }
 
-.skills > progress {
+.skills>progress {
     appearance: none;
     -webkit-appearance: none;
     width: 490px;
@@ -161,5 +161,84 @@ header img {
     border-radius: 3px;
 }
 
-progress::-webkit-progress-value {background-color: var(--blue-color) !important;}
-progress::-moz-progress-bar {background-color: var(--blue-color) !important;}
+progress::-webkit-progress-value {
+    background-color: var(--blue-color) !important;
+}
+
+progress::-moz-progress-bar {
+    background-color: var(--blue-color) !important;
+}
+
+.icons {
+    height: 270px;
+    width: 100%;
+    background-color: var(--blue-color);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons .icon-text {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.icons p.number {
+    margin: 0px 0px 8px 0px;
+}
+
+.container-work,
+.container-work-hour,
+.container-feedback,
+.container-clients {
+    display: flex;
+}
+
+.icons img {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+#photo-work {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.photo-work img {
+    height: 300px;
+    width: 340px;
+    transition: opacity 1s;
+}
+
+#photo-work img:hover {
+    opacity: 0.8;
+}
+
+#show-more-photo {
+    width: 100%;
+    height: 100px;
+    background-color: #f5f5f5;
+    text-transform: uppercase;
+    color: #959595;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 1s, color 1s;
+    cursor: pointer;
+}
+
+#show-more-photo:hover {
+    background-color: #959595;
+    color: #f5f5f5;
+}
+
+#show-more-photo:visited {
+    background-color: #959595;
+    color: #f5f5f5;
+}
