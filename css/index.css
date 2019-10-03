@@ -2,7 +2,7 @@
 
 body {
     margin: auto;
-    max-width: 1300px;
+    max-width: 1400px;
     color: #1d1d1d;
     --blue-color: #10c9c3;
     --text: #787878;
@@ -24,7 +24,7 @@ header {
 header img {
     top: 33px;
     left: 90px;
-    position: fixed;
+    position: fixed;                    /* here is a problem */
     width: 28px;
     height: 28px;
 }
@@ -241,4 +241,63 @@ progress::-moz-progress-bar {
 #show-more-photo:visited {
     background-color: #959595;
     color: #f5f5f5;
+}
+
+#process .white-bg {
+    background: #ffffff no-repeat;
+    height: 920px;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.slogo-process {
+    margin: 90px 0px 30px;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.text-process {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 0.95em;
+    margin: 0px 0px 55px;
+    color: var(--text);
+    text-align: center;
+    width: 550px;
+}
+/* here should be iframe with margin-bottom 90px and blue button */
+
+.bg-services {
+    width: 100%;
+    height: 530px;
+    background: #f5f5f5 no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.container-services {
+    display: flex;
+    flex-flow: column wrap;
+    height: 150px;
+    width: 245px;
+    padding: 20px;
+}
+
+.container-services h3 {
+    font-size: 1.1em;
+    margin: 17px 0px 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container-services p {
+    color: var(--text);
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif !important;
 }
