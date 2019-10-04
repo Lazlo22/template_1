@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
 </head>
@@ -20,7 +22,7 @@
                     <li><a href="#work">work</a></li>
                     <li><a href="#process">process</a></li>
                     <li><a href="#services">services</a></li>
-                    <li><a href="#">testimonials</a></li>
+                    <li><a href="#testimonials">testimonials</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
@@ -92,15 +94,25 @@
                 </div>
             </div>
             <div id="photo-work">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img class="photo-unique" src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="https://picsum.photos/337/300" alt="random photos">
+                <img src="https://picsum.photos/id/1000/337/299" alt="random photos">
+                <img src="https://picsum.photos/id/1002/337/299" alt="random photos">
+                <img src="https://picsum.photos/id/1010/337/299" alt="random photos">
+                <img src="https://picsum.photos/id/1005/337/299" alt="random photos">
+                <img class="photo-unique" src="https://picsum.photos/id/1011/337/299" alt="random photos">
+                <img src="https://picsum.photos/id/1014/337/299" alt="random photos">
+                <img src="https://picsum.photos/id/1016/337/299" alt="random photos">
             </div>
+            <!-- <div id="photo-work1">    need js
+                    <img src="https://picsum.photos/337/300" alt="random photos">
+                    <img src="https://picsum.photos/id/1000/337/299" alt="random photos">
+                    <img src="https://picsum.photos/id/1002/337/299" alt="random photos">
+                    <img src="https://picsum.photos/id/1010/337/299" alt="random photos">
+                    <img src="https://picsum.photos/id/1005/337/299" alt="random photos">
+                    <img class="photo-unique" src="https://picsum.photos/id/1011/337/299" alt="random photos">
+                    <img src="https://picsum.photos/id/1014/337/299" alt="random photos">
+                    <img src="https://picsum.photos/id/1016/337/299" alt="random photos">
+                </div> -->
             <a href="#photo-work" id="show-more-photo">load more work</a>
         </section>
         <section id="process">
@@ -112,7 +124,9 @@
                         bearing behold years.
                     </p>
                 </div>
-                <!-- here should be a video -->
+                <iframe width="1000" height="570" src="https://www.youtube.com/embed/i45cot-R224"
+                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                 picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         <section id="services">
@@ -167,7 +181,57 @@
                 </div>
             </div>
         </section>
+        <section id="testimonials">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="carousel-bg">
+                                <div class="carousel-text">
+                                    <p class="quotation">"Outstanding job and exceeded all expectations.
+                                         It was a pleasure to work with them on a sizable first project
+                                         and am lookin forward to start the next one asap."</p>
+                                    <p class="name">michael hopkins</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="carousel-bg">
+                                <div class="carousel-text">
+                                    <p class="quotation">"But man is not made for defeat. A man can be
+                                         destroyed but not defeated."</p>
+                                    <p class="name">Ernest Hemingway</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="carousel-bg">
+                                <div class="carousel-text">
+                                    <p class="quotation">"Permanence, perseverance and persistence in spite
+                                         of all obstacles, discouragements, and impossibilities: It is this,
+                                          that in all things distinguishes the strong soul from the weak."</p>
+                                    <p class="name">Thomas Carlyle</p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                <div class="sponsors">
+                    <img src="img/sponsor1.jpg" alt="sponsor1">
+                    <img src="img/sponsor2.jpg" alt="sponsor2">
+                    <img src="img/sponsor3.jpg" alt="sponsor3">
+                    <img src="img/sponsor4.jpg" alt="sponsor4">
+                    <img src="img/sponsor1.jpg" alt="sponsor1">
+                </div>
+        </section>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
