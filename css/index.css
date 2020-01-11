@@ -44,10 +44,9 @@ header {
 }
 
 @media(max-width:400px) {
-    #home .bg-home button {
+    #home .bg-home a {
         margin-top: 7px;
         padding: 5px 15px;
-
     }
 }
 
@@ -60,7 +59,6 @@ header {
     .unique-li {
         padding: 0px 5px !important;
     }
-
 }
 
 @media(max-width:440px) {
@@ -143,6 +141,7 @@ header {
 
 .bg-home p {
     color: var(--text);
+    margin-bottom: 30px;
 }
 
 .bg-home a {
@@ -150,10 +149,6 @@ header {
     text-transform: uppercase;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif !important;
-}
-
-.bg-home button {
-    margin-top: 15px;
     border: 0;
     padding: 15px 30px;
     background-color: var(--blue-color);
@@ -398,6 +393,11 @@ progress::-moz-progress-bar {
 #show-more-photo:visited {
     background-color: #959595;
     color: #f5f5f5;
+}
+
+iframe{
+    width: 75%;
+    height: 570px;
 }
 
 @media(max-width: 950px) {
