@@ -18,12 +18,12 @@
             <nav>
                 <ul>
                     <li class="unique-li"><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#work">work</a></li>
-                    <li><a href="#process">process</a></li>
-                    <li><a href="#services">services</a></li>
-                    <li><a href="#testimonials">testimonials</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a class="smooth" href="#about">about</a></li>
+                    <li><a class="smooth" href="#work">work</a></li>
+                    <li><a class="smooth" href="#process">process</a></li>
+                    <li><a class="smooth" href="#services">services</a></li>
+                    <li><a class="smooth" href="#testimonials">testimonials</a></li>
+                    <li><a class="smooth" href="#contact">contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,12 +52,14 @@
             <div class="about-skills">
                 <div class="skills">
                     <h3>Professional Skills</h3>
-                    <p><b>UX DESIGN 75%</b></p>
-                    <progress max="100" value="75"></progress>
-                    <p><b>WEB DEVELOPMENT 90%</b></p>
-                    <progress max="100" value="90"></progress>
-                    <p><b>MARKETING 65%</b></p>
-                    <progress max="100" value="65"></progress>
+                    <div class="bars">
+                        <p><b>UX DESIGN 75%</b></p>
+                        <progress max="100" value="75"></progress>
+                        <p><b>WEB DEVELOPMENT 90%</b></p>
+                        <progress max="100" value="90"></progress>
+                        <p><b>MARKETING 65%</b></p>
+                        <progress max="100" value="65"></progress>
+                    </div>
                 </div>
                 <img src="img/skills-ph.png" alt="skill-photo">
             </div>
@@ -94,26 +96,26 @@
                 </div>
             </div>
             <div id="photo-work">
-                <img src="https://picsum.photos/337/300" alt="random photos">
-                <img src="https://picsum.photos/id/1000/337/299" alt="random photos">
-                <img src="https://picsum.photos/id/1002/337/299" alt="random photos">
-                <img src="https://picsum.photos/id/1010/337/299" alt="random photos">
-                <img src="https://picsum.photos/id/1005/337/299" alt="random photos">
-                <img class="photo-unique" src="https://picsum.photos/id/1011/337/299" alt="random photos">
-                <img src="https://picsum.photos/id/1014/337/299" alt="random photos">
-                <img src="https://picsum.photos/id/1016/337/299" alt="random photos">
+                <img class="all" src="https://picsum.photos/337/300" alt="random photos">
+                <img class="all" src="https://picsum.photos/id/1000/337/299" alt="random photos">
+                <img class="all" src="https://picsum.photos/id/1002/337/299" alt="random photos">
+                <img class="all" src="https://picsum.photos/id/1010/337/299" alt="random photos">
+                <img class="second all" src="https://picsum.photos/id/1005/337/299" alt="random photos">
+                <img class="second all" src="https://picsum.photos/id/1011/337/299" alt="random photos">
+                <img class="first all" src="https://picsum.photos/id/1014/337/299" alt="random photos">
+                <img class="first all" src="https://picsum.photos/id/1016/337/299" alt="random photos">
             </div>
-            <!-- <div id="photo-work1">    need js
-                    <img src="https://picsum.photos/337/300" alt="random photos">
-                    <img src="https://picsum.photos/id/1000/337/299" alt="random photos">
-                    <img src="https://picsum.photos/id/1002/337/299" alt="random photos">
-                    <img src="https://picsum.photos/id/1010/337/299" alt="random photos">
-                    <img src="https://picsum.photos/id/1005/337/299" alt="random photos">
-                    <img class="photo-unique" src="https://picsum.photos/id/1011/337/299" alt="random photos">
-                    <img src="https://picsum.photos/id/1014/337/299" alt="random photos">
-                    <img src="https://picsum.photos/id/1016/337/299" alt="random photos">
-                </div> -->
-            <a href="#photo-work" id="show-more-photo">load more work</a>
+            <div id="photo-active">
+                    <img id="photos-js" class="all" src="https://picsum.photos/337/300" alt="random photos">
+                    <img id="photos-js" class="all" src="https://picsum.photos/id/1020/337/299" alt="random photos">
+                    <img id="photos-js" class="all" src="https://picsum.photos/id/1022/337/299" alt="random photos">
+                    <img id="photos-js" class="all" src="https://picsum.photos/id/1024/337/299" alt="random photos">
+                    <img id="photos-js" class="second all" src="https://picsum.photos/id/1025/337/299" alt="random photos">
+                    <img id="photos-js" class="second all" src="https://picsum.photos/id/1008/337/299" alt="random photos">
+                    <img id="photos-js" class="first all" src="https://picsum.photos/id/1004/337/299" alt="random photos">
+                    <img id="photos-js" class="first all" src="https://picsum.photos/id/1006/337/299" alt="random photos">
+                </div>
+            <button id="show-more-photo">load works</button>
         </section>
         <section id="process">
             <div class="white-bg">
@@ -124,8 +126,9 @@
                         bearing behold years.
                     </p>
                 </div>
-                <iframe width="1000" height="570" src="https://www.youtube.com/embed/i45cot-R224" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
-                 picture-in-picture" allowfullscreen></iframe>
+                <iframe width="75%" height="570px" src="https://www.youtube.com/embed/y_MTsIQuNEo" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </section>
         <section id="services">
@@ -154,7 +157,7 @@
                     <p>Morning his saying moveth t
                         multiply appear life be</p>
                 </div>
-                <div class="container-services">
+                <div id="hide-" class="container-services">
                     <img src="img/icons/plane.svg" alt="plane">
                     <h3>seo / marketing</h3>
                     <p>Give won't after land fill creeping
@@ -211,8 +214,7 @@
                         <div class="carousel-bg">
                             <div class="carousel-text">
                                 <p class="quotation">"Permanence, perseverance and persistence in spite
-                                    of all obstacles, discouragements, and impossibilities: It is this,
-                                    that in all things distinguishes the strong soul from the weak."</p>
+                                    of all obstacles, discouragements, and impossibilities"</p>
                                 <p class="name">Thomas Carlyle</p>
                             </div>
                         </div>
@@ -240,7 +242,7 @@
                     <input type="text" placeholder="Your Name">
                     <input type="email" placeholder="Your Email">
                 </div>
-                <input type="text" placeholder="Your Title"><br>
+                <input class="title-in" type="text" placeholder="Your Title"><br>
                 <input class="comment-out" type="text" placeholder="Your Comment"><br>
                 <button class="form-sub" type="submit">send message</button>
             </form>
@@ -261,8 +263,8 @@
             <p><a href="https://github.com/Lazlo22">https//github.com/Lazlo22</a></p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
@@ -270,6 +272,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/photo.js"></script>
 </body>
 
 </html>
